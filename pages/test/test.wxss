@@ -1,0 +1,17 @@
+/* pages/test/test.wxss */
+image{
+  width: 200rpx;
+  height: 230rpx;
+  float: left;
+}
+.title{
+  color:red;
+}
+.contents{
+  color:blue;
+}
+.collect{
+  float:right;
+  border:black 1px solid;
+  
+}

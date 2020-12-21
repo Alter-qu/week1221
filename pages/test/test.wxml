@@ -1,0 +1,17 @@
+<!--pages/test/test.wxml-->
+<view>
+<view wx:for="{{circle}}" wx:key="circle">
+   <view><image src="/image/{{item.img}}" /></view>
+  <view class="title">{{item.title}}</view>
+  <view class="contents">{{item.contents}}</view>
+ 
+  <view>收藏数：{{item.collection}}</view>
+
+  <view class="collect">
+  <view wx:if="{{collected==item.id}}">已收藏</view>
+  <view wx:else bind:tap="collect" data-id="{{item.id}}">收藏</view>
+  </view>
+  <view>. . . </view>
+</view>
+
+</view>
